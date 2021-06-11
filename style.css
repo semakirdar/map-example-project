@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+.modal {
+    padding: 30px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #e5ecf3;
+    position: absolute;
+    top:50px;
+    width: 800px;
+
+/*opacity: 0;*/
+    z-index: 9999;
+    visibility: hidden;
+}
+.modal-close{
+    margin-bottom: 20px;
+}
+.modal-backdrop{
+    background-color: #131313;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    display: none;
+    opacity: 0.5;
+    z-index: 9998;
+}
+#mapid { height: 400px; }
+#modalMap{height:300px; width: 100%;}
+
+.main-wrapper{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+.list-table{
+    float: right;
+    display: inline-block;
+    width: 50%;
+}
+.form{
+    margin-top: 30px;
+}
+
+.form input{
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form textarea{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.form-select{
+    margin-bottom: 30px;
+}

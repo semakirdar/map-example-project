@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAPS</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="main-wrapper">
+        <div id="mapid" class="map">
+
+        </div>
+
+        <div class="list-table">
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Toplanma Alanı Adı</th>
+                    <th>Toplanma Alanı Adresi</th>
+                </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="summary">
+
+        </div>
+        <div id="x">
+
+        </div>
+
+    </div>
+
+    <button id="newAddButton">New Add</button>
+    <button id="deleteAllButton">DELETE ALL</button>
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose">KAPAT</button>
+
+        <div id="modalMap">
+
+        </div>
+
+
+        <div class="form">
+            <form id="newAddForm">
+                <div class="">
+                    <select class="form-select" id="formSelect">
+                        <option selected value="images/marker.png">Default</option>
+                        <option value="images/markerhome.png">Home</option>
+                        <option value="images/school.png">School</option>
+                        <option value="images/markeroffice.png">Office</option>
+                    </select>
+                </div>
+
+                <input id="modalInputName" type="text" placeholder="Toplanma Alanı Adı:"><br>
+
+                <textarea id="modalInputAdress" placeholder="Adres:"></textarea>
+
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop"></div>
+
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+<script src="script.js"></script>
+</body>
+</html>
